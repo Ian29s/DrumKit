@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'DNB'; /* Name your font family */
+    src: url('../font/Drum\ N\ Bass.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
+.DNB{
+    font-family: 'DNB';
+    font-size: 60px;
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;  
+}
+.drum {
+    background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
+      -webkit-filter: drop-shadow(5px 5px 5px #7e7e7e);
+      filter: drop-shadow(5px 5px 5px #7e7e7e);
+      position: absolute;
+      border-radius: 100%;
+  }
+
+/* .base1, .base2, .snare, .cymball, .cymball2, .cymbalr, .cymbalr2, .tom, .tom2, .tom3 {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    -webkit-filter: drop-shadow(5px 5px 5px #7e7e7e);
+    filter: drop-shadow(5px 5px 5px #7e7e7e);
+    position: absolute;
+    border-radius: 100%;
+} */
+
+/* .base1.clicked, .snare.clicked, .base2.clicked, .tom.clicked, .tom2.clicked, .tom3.clicked {
+    transform: scale(1.03);
+} */
+
+.cymball.rotated, .cymball2.rotated {
+    transform: matrix(1, 0.1, 0, 1, 0, 0);
+}
+
+.cymbalr.rotated, .cymbalr2.rotated {
+    transform: matrix(1, -0.1, 0, 1, 0, 0);
+}
+
+.w {
+    background-image: url("../images/snare.png");
+    background-size: cover;
+    width: 275px;
+    height: 275px;
+    font-size: 0;
+    margin-left: 510px;
+    margin-top: 120px;
+    z-index: 2;
+}
+
+.q {
+    background-image: url("../images/cymball.png");
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    font-size: 0;
+    margin-left: 190px;
+    margin-top: 280px;
+    z-index: 3;
+}
+
+.e {
+    background-image: url("../images/cymball.png");
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    font-size: 0;
+    margin-left: 230px;
+    margin-top: 160px;
+    z-index: 4;
+}
+
+.a {
+    background-image: url("../images/tom.png");
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    font-size: 0;
+    margin-left: 365px;
+    margin-top: 85px;
+    z-index: 3;
+}
+
+.s {
+    background-image: url("../images/tom.png");
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+    font-size: 0;
+    margin-left: 522px;
+    margin-top: 20px;
+    z-index: 3;
+}
+
+.d {
+    background-image: url("../images/tom.png");
+    background-size: cover;
+    width: 155px;
+    height: 155px;
+    font-size: 0;
+    margin-left: 663px;
+    margin-top: 20px;
+    z-index: 3;
+}
+
+.j {
+    background-image: url("../images/kick.png");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    font-size: 0;
+    margin-left: 315px;
+    margin-top: 250px;
+    z-index: 1;
+}
+
+.k {
+    background-image: url("../images/kick.png");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    font-size: 0;
+    margin-left: 315px;
+    margin-top: 250px;
+    z-index: 1;
+    margin-left: 680px;
+    margin-top: 250px;
+    z-index: 1;
+}
+
+.u {
+    background-image: url("../images/cymbalr.png");
+    background-size: cover;
+    width: 270px;
+    height: 270px;
+    font-size: 0;
+    margin-left: 780px;
+    margin-top: 50px;
+    z-index: 4;
+}
+
+.i {
+    background-image: url("../images/cymbalr.png");
+    background-size: cover;
+    width: 240px;
+    height: 240px;
+    font-size: 0;
+    margin-left: 920px;
+    margin-top: 250px;
+    z-index: 3;
+}
+
+  .pressed {
+    transform: scale(1.03);
+  }
+
+.keyboards{
+    background-color: #3c4f71;
+    border-radius: 10px;
+}
+
+.footer_custom{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e7e7e7;
+}
